@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = 'Victor'
@@ -8,6 +9,7 @@ function App() {
   function sum(a, b){
     return a+b
   }
+
   return (
     <div className="App">
       <h2>Alterando JSX</h2>
@@ -15,6 +17,7 @@ function App() {
       <p>Soma {sum(1, 4)}</p>
       <img src={url} alt='minha imagem' />
       <p> oii!!</p>
+      <HelloWorld />
     </div>
   )
 }
